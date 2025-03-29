@@ -6,7 +6,9 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist",
-        "runtime": "nodejs18.x"
+        "runtime": "nodejs20.x",
+        "installCommand": "npm install --force --legacy-peer-deps",
+        "buildCommand": "NODE_OPTIONS='--trace-warnings' npm run build"
       }
     }
   ],
