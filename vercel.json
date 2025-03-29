@@ -1,12 +1,5 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/" },
-      { "src": "/checkout", "dest": "/" },
-      { "src": "/new", "dest": "/" },
-      { "src": "/used-phones", "dest": "/" },
-      { "src": "/new-arrival", "dest": "/" },
-      { "src": "/contact", "dest": "/" },
-      { "src": "/search", "dest": "/" },
-      { "src": "/product/:id", "dest": "/" }
-    ]
-  }
+  "rewrites":  [
+    {"source": "/(.*)", "destination": "/index.html"}
+  ]
+}
