@@ -5,14 +5,22 @@
       "src": "vite.config.js",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "dist",
+        "runtime": "nodejs18.x"
       }
     }
   ],
   "routes": [
     {
-      "src": "/.*",
-      "dest": "/index.html"
+      "src": "/assets/.+",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html",
+      "status": 200
     }
   ]
 }
