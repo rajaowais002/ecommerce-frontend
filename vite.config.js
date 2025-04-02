@@ -1,14 +1,13 @@
-import { createHtmlPlugin } from 'vite-plugin-html'
-
 export default {
-  plugins: [
-    createHtmlPlugin({
-      entry: '/src/main.jsx', // your entry file
-      template: 'index.html', // your template
-    })
-  ]
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: './index.html' // Points to your HTML file
+      }
+    }
+  }
 }
-
 // import { defineConfig } from 'vite';
 // import react from '@vitejs/plugin-react';
 // import path from 'path';
