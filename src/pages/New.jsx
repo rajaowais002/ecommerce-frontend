@@ -68,11 +68,8 @@ const New = ({products}) => {
               <p>Out of stock: {filters.outOfStock ? 'Yes' : 'No'}</p>
             </div>
           )}
-          {/* <button>Price ▼</button> */}
         </div>
         <div className="sort-by">
-          {/* <span>Sort by: </span>
-          <button>Best selling ▼</button> */}
           <span>{productCount} products</span>
         </div>
       </div>

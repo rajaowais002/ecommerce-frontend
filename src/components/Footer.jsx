@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>© 2025. Raja Mobiles Powered by Shopify</p>
+                <p>© 2025. Raja Mobiles Powered by Raja</p>
             </div>
         </footer>
     );

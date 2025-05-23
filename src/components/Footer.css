@@ -120,8 +120,7 @@
     color: #ccc;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 1180px) {
     .footer-content {
         flex-direction: column; /* Stack sections vertically on smaller screens */
         align-items: center; /* Center-align sections */

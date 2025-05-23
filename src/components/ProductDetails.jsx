@@ -10,8 +10,8 @@ const ProductDetails = ({ data }) => {
   const navigate = useNavigate();
   const { cart, addToCart } = useContext(CartContext);
   
-  const { newArrivals, products } = data;
-  const product = newArrivals.find((p) => p.id === parseInt(id)) || products.find((p) => p.id === parseInt(id));
+  const { newArrivals, products,usedPhones } = data;
+  const product = newArrivals.find((p) => p.id === parseInt(id)) || products.find((p) => p.id === parseInt(id)) || usedPhones.find((p) => p.id === parseInt(id));
 
   const handleBuyNow = () => {
     addToCart(product);

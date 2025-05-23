@@ -18,10 +18,14 @@ const Header = () => {
         e.preventDefault();
         navigate(`/search?query=${searchQuery}`);
     };
+    const signin=()=>{
+        navigate('/login');
+    }
 
     return (
         <div>
             <div className="top-bar">
+            <button className='signinbutton' onClick={signin}>Signin/Signup</button>
                 <p>14 DAYS RETURN POLICY | FREE DELIVERY</p>
                 <div className="icons">
                     <form onSubmit={handleSearch}>
@@ -43,9 +47,9 @@ const Header = () => {
                 <div className="logo">Raja Mobiles</div>
                 <nav className="nav-menu">
                     <Link to="/">Home</Link>
-                    <Link to="/new">New</Link>
+                    <Link to="/new">New Phones</Link>
                     <Link to="/used-phones">Used Phones</Link>
-                    <Link to="/new-arrival">New Arrivals</Link>
+                    {/* <Link to="/new-arrival">New Arrivals</Link> */}
                     <Link to="/contact">Contact</Link>
                 </nav>
                 <button className="hamburger" onClick={toggleSidebar} aria-label="Open menu">

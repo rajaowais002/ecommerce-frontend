@@ -1,6 +1,4 @@
-/* Header.css */
 
-/* General Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -9,11 +7,19 @@
     background-color: #444;
     color: white;
     position: relative;
-    /* Add this for proper positioning */
+}
+
+.signinbutton{
+    background: none;
+    color: white;
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 90px;
     font-weight: bold;
 }
 
@@ -60,11 +66,8 @@
     font-size: 24px;
     cursor: pointer;
     position: absolute;
-    /* Position the hamburger menu absolutely */
-    top: 20px;
-    /* Adjust this to align with the header padding */
+    top: 10px;
     right: 20px;
-    /* Position it in the top-right corner */
 }
 
 .sidebar {
@@ -193,10 +196,14 @@ form button {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 768px),(max-width: 1206px) {
     .header {
         flex-direction: column;
         padding: 10px;
+    }
+
+    .logo {
+        font-size: 30px;
     }
 
     .nav-menu {
@@ -205,13 +212,9 @@ form button {
 
     .hamburger {
         display: block;
-        /* Show the hamburger menu */
         position: absolute;
-        /* Ensure it stays in the corner */
-        top: 20px;
-        /* Adjust this to align with the header padding */
+        top: 10px;
         right: 20px;
-        /* Position it in the top-right corner */
     }
 
     .top-bar {
@@ -234,13 +237,9 @@ form button {
 
     .cart-count {
         font-size: 10px;
-        /* Smaller font size for cart count */
         padding: 1px 5px;
-        /* Smaller padding for cart count */
         top: -8px;
-        /* Adjust position for smaller screens */
         right: -8px;
-        /* Adjust position for smaller screens */
     }
 }
 
@@ -249,18 +248,18 @@ form button {
         font-size: 10px;
     }
 
+    .logo {
+        font-size: 30px;
+    }
+
     .icon {
         font-size: 16px;
     }
 
     .cart-count {
         font-size: 8px;
-        /* Even smaller font size for cart count */
         padding: 1px 4px;
-        /* Even smaller padding for cart count */
         top: -6px;
-        /* Adjust position for very small screens */
         right: -6px;
-        /* Adjust position for very small screens */
     }
 }
